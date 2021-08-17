@@ -1,0 +1,142 @@
+/* root */
+
+* {
+    /* border: .5px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #23130C;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: transitionIn .75s;
+    -webkit-animation: transitionIn .75s;
+    background-color: #F5ECE3;
+    font-family: 'Nanum Myeongjo', serif;
+    color: #23130C;
+}
+
+@-webkit-keyframes transitionIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-.5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4em;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 1.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.currentPage a {
+    font-weight: 800;
+}
+
+nav {
+    /* position: fixed; */
+    padding: 3em;
+}
+
+.links {
+    list-style-type: none;
+    font-size: .85em;
+}
+
+.eachLink {
+    padding: 1em 0em 1em 0em;
+}
+
+.htdy {
+    padding-bottom: 2em;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+main {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10em 10em 0em 3em;
+    max-width: 1080px;
+    border-left: .25px solid #bba89f;
+    width: 100%;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10em;
+}
+
+.title {
+    padding-right: 3em;
+}
+
+.content {
+    max-width: 400px;
+    min-width: 200px;
+}
+
+/* scrollbar!!! */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #bba89f;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #bba89f;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #806a5f;
+}
